@@ -46,7 +46,7 @@
           <v-col class="text-center text-md-left">
             <g-link to="/">
               <v-toolbar-title
-                class="secondary--text mont pr-6"
+                class="secondary--text mont pr-9"
                 style="font-size: 1.8em;"
                 >{{ $static.metadata.siteName }}</v-toolbar-title
               >
