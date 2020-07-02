@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <v-container fluid ma-0 px-0 pt-0 pb-12>
-      <v-row class="justify-center">
+    <v-container class="pt-0 pt-md-6">
+      <v-row class="justify-center mb-12 pb-12">
         <v-col cols="12" md="10" lg="8" xl="6" class="pa-0">
           <v-img
             :src="$page.post.featuredImage"
