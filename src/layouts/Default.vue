@@ -2,7 +2,7 @@
   <v-app style="overflow: hidden;">
     <v-app-bar app absolute elevation="0" class="app transparent">
       <v-btn icon @click="drawer = !drawer" class="hidden-md-and-up mr-0">
-        <v-icon>fas fa-bars</v-icon>
+        <v-icon large>menu</v-icon>
       </v-btn>
 
       <v-navigation-drawer
@@ -21,22 +21,6 @@
             style="padding-left: 35px !important;"
           >
             Home
-          </v-list-item>
-
-          <v-list-item
-            to="/store"
-            active-class="primary--text"
-            style="padding-left: 35px !important;"
-          >
-            Store
-          </v-list-item>
-
-          <v-list-item
-            to="/about"
-            active-class="primary--text"
-            style="padding-left: 35px !important;"
-          >
-            About
           </v-list-item>
 
           <v-list-item
@@ -62,7 +46,7 @@
           <v-col class="text-center text-md-left">
             <g-link to="/">
               <v-toolbar-title
-                class="secondary--text mont"
+                class="secondary--text mont pr-6"
                 style="font-size: 1.8em;"
                 >{{ $static.metadata.siteName }}</v-toolbar-title
               >
@@ -73,12 +57,6 @@
             <v-btn text to="/" class="no-active">
               <span class="nav-text secondary--text py-2">Home</span>
             </v-btn>
-            <v-btn text to="/store" class="no-active">
-              <span class="nav-text secondary--text py-2">Store</span>
-            </v-btn>
-            <v-btn text to="/about" class="no-active">
-              <span class="nav-text secondary--text py-2">About</span>
-            </v-btn>
             <v-btn text to="/blog" class="no-active">
               <span class="nav-text secondary--text py-2">Blog</span>
             </v-btn>
@@ -86,9 +64,9 @@
               <span class="nav-text secondary--text py-2">Contact</span>
             </v-btn>
           </v-toolbar-items>
-          <v-btn icon class="snipcart-checkout no-active">
+          <!-- <v-btn icon class="snipcart-checkout no-active">
             <v-icon color="highlight">fas fa-shopping-cart</v-icon>
-          </v-btn>
+          </v-btn> -->
         </v-row>
       </v-container>
     </v-app-bar>

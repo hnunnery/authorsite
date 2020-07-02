@@ -12,23 +12,19 @@ export default function(Vue, { appOptions, head }) {
     },
     {
       rel: 'stylesheet',
-      href: 'https://use.fontawesome.com/releases/v5.10.2/css/all.css',
-    },
-    {
-      rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css?family=Montserrat',
-    },
-    {
-      rel: 'stylesheet',
-      href: 'https://cdn.snipcart.com/themes/v3.0.12/default/snipcart.css',
     }
+    // {
+    //   rel: 'stylesheet',
+    //   href: 'https://cdn.snipcart.com/themes/v3.0.12/default/snipcart.css',
+    // }
   );
 
   // Add an external Javascript before the closing </body> tag
   head.script.push({
-    type: 'text/javascript',
-    src: 'https://cdn.snipcart.com/themes/v3.0.12/default/snipcart.js',
-    body: true,
+    // type: 'text/javascript',
+    // src: 'https://cdn.snipcart.com/themes/v3.0.12/default/snipcart.js',
+    // body: true,
   });
 
   // Add a meta tag
@@ -40,7 +36,7 @@ export default function(Vue, { appOptions, head }) {
 
   const opts = {
     icons: {
-      iconfont: 'fa',
+      iconfont: 'mdi',
     },
     theme: {
       themes: {

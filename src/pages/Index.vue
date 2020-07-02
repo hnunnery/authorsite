@@ -1,24 +1,63 @@
 <template>
   <Layout>
     <v-container>
-      <v-row
-        justify="center"
-        align="center"
-        v-for="section in sections"
-        :key="section.node.id"
-      >
+      <v-row class="justify-center align-center">
         <v-col cols="12" lg="10" xl="8" class="mb-12">
           <h1
-            class="custom-header mont secondary--text text-center mt-md-5 mb-5 mb-md-12"
+            class="display-3 mont secondary--text text-center mt-md-5 mb-5 mb-md-12"
             style="line-height: 1em;"
           >
-            {{ section.node.title }}
+            Name of Novel
           </h1>
+          <p class="text-center">(insert book cover)</p>
           <p class="body-1 secondary--text mt-6" style="line-height: 2em;">
-            {{ section.node.paraOne }}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            autem facilis vitae sint enim repudiandae repellendus ea quia at in
+            sed adipisci dolore modi, aspernatur voluptatem obcaecati neque
+            asperiores harum cum culpa ducimus, error ad exercitationem!
+            Consequatur, quasi quaerat? Iusto itaque temporibus aliquid
+            recusandae architecto molestias similique nam rerum consectetur!
           </p>
           <p class="body-1 secondary--text mt-6" style="line-height: 2em;">
-            {{ section.node.paraTwo }}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            autem facilis vitae sint enim repudiandae repellendus ea quia at in
+            sed adipisci dolore modi, aspernatur voluptatem obcaecati neque
+            asperiores harum cum culpa ducimus, error ad exercitationem!
+            Consequatur, quasi quaerat? Iusto itaque temporibus aliquid
+            recusandae architecto molestias similique nam rerum consectetur!
+          </p>
+        </v-col>
+      </v-row>
+      <v-row class="justify-center align-center">
+        <v-col cols="12" lg="10" xl="8" class="mb-12">
+          <p class="text-center">(insert photo)</p>
+          <h1
+            class="display-3 mont secondary--text text-center mt-md-5"
+            style="line-height: 1em;"
+          >
+            Josh Shuh
+          </h1>
+          <h2
+            class="mont primary--text text-center mt-md-5 mb-5 mb-md-12"
+            style="line-height: 1em;"
+          >
+            Author
+          </h2>
+          <p class="body-1 secondary--text mt-6" style="line-height: 2em;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            autem facilis vitae sint enim repudiandae repellendus ea quia at in
+            sed adipisci dolore modi, aspernatur voluptatem obcaecati neque
+            asperiores harum cum culpa ducimus, error ad exercitationem!
+            Consequatur, quasi quaerat? Iusto itaque temporibus aliquid
+            recusandae architecto molestias similique nam rerum consectetur!
+          </p>
+          <p class="body-1 secondary--text mt-6" style="line-height: 2em;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            autem facilis vitae sint enim repudiandae repellendus ea quia at in
+            sed adipisci dolore modi, aspernatur voluptatem obcaecati neque
+            asperiores harum cum culpa ducimus, error ad exercitationem!
+            Consequatur, quasi quaerat? Iusto itaque temporibus aliquid
+            recusandae architecto molestias similique nam rerum consectetur!
           </p>
         </v-col>
       </v-row>
@@ -26,65 +65,10 @@
   </Layout>
 </template>
 
-<page-query>
-query {
-  allHome {
-    edges {
-      node {
-        id
-        featuredImage
-        title
-        paraOne
-        paraTwo
-      }
-    }
-  }
-}
-</page-query>
-
 <script>
 export default {
   metaInfo: {
     title: 'Home',
   },
-  computed: {
-    sections() {
-      return this.$page.allHome.edges;
-    },
-  },
 };
 </script>
-
-<style lang="scss" scoped>
-@media screen and (max-width: 1263px) {
-  h3 {
-    margin-top: 30px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .text-container {
-    padding: 0px 7px !important;
-  }
-  .v-card {
-    padding: 10px 0px !important;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-  }
-  .description {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-  }
-  .mobile-top {
-    padding: 20px 0 0 !important;
-  }
-}
-.description {
-  line-height: 1.7em !important;
-}
-@media screen and (min-width: 1400px) {
-  .description {
-    line-height: 1.9em !important;
-    font-size: 1.5em !important;
-  }
-}
-</style>
