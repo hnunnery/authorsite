@@ -33,27 +33,3 @@ collections:
           widget: 'markdown',
           pattern: ['^.{0,230}$', 'Cannot exceed 230 characters'],
         }
-    # fields used in home page
-  - name: 'home'
-    label: 'Home'
-    folder: 'home'
-    create: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Paragraph1', name: 'paraOne', widget: 'string' }
-      - {
-          label: 'Paragraph2',
-          name: 'paraTwo',
-          widget: 'string',
-          optional: true,
-        }
-  - name: 'products'
-    label: 'Products'
-    folder: 'products'
-    create: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Featured Image', name: 'featuredImage', widget: 'image' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Price', name: 'price', widget: 'string' }
-      - { label: 'Code', name: 'code', widget: 'string' }
