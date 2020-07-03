@@ -87,10 +87,7 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-@media screen and (max-width: 959px) {
-  .row {
-    margin-top: 0px !important;
-  }
-}
+
+<style scoped>
+@import url('https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css');
 </style>
